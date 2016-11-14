@@ -123,15 +123,42 @@ body {
     background-size: 100px 100px;
 }
 
+.navbar {
+    font-size: 1.2em;
+}
+
 .jumbotron {
     background-color: hsla(0,0%,80%,0.3);
 }
 
 .jumbotron a {
-    box-shadow: 0.15em 0.25em 0.25em hsla(0,0%,25%,0.8);
+    box-shadow: 0.15em 0.25em 0.25em hsla(0,0%,25%,0.7);
 }
 
+.jumbotron img {
+    max-width: 40%;
+    height: auto;
+    display: inline;
+}
 
+.bg-2 {
+    background-color: rgba(20,20,20,0.3); /* Dark Blue */
+    color: #fff;
+}
+.bg-3 {
+    background-color: rgba(30,30,30,0.4); /* White */
+    color: #fff;
+}
+
+.bg-4 {
+    background-color: #2f2f2f;
+    color: #fff;
+}
+
+.container-fluid {
+    padding-top: 4.375em;
+    padding-bottom: 4.375em;
+}
 
 
 

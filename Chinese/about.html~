@@ -1,0 +1,64 @@
+<div class="banner">
+	<div class="container">
+		<div class="col-md-3 b-part1">
+			<img src="../static/img/me.jpg" alt="shifengchen">
+			<h1>陈诗锋</h1>
+			<h2>Web Engineer</h2>
+		</div>
+		<div class="col-md-3 b-part2">
+			<h3>Contact</h3>
+			<h4>Email: <a href="mailto:shifeng_c@yahoo.com">shifeng_c@yahoo.com</a></h4>
+			<h4 class="agile">QQ: 1103955060</h4>
+			<h4>Hometown: 福建泉州</h4>
+		</div>
+		<div class="col-md-3 b-part4">
+		  <h3>WeChat</h3>
+		  <a class="me_thumbnail"
+		     style="color: #00CC33;">
+		    <i class="fa fa-weixin fa-2x" aria-hidden="true"></i>
+		    <span><img src="../static/img/weixin.jpg" width=120 height=120></span>
+		  </a>
+		  <h4>Follow My WeChat Official Accounts</h4>
+		</div>
+		<div class="col-md-3 b-part3">
+			<h3>Follow</h3>
+			<a href="https://www.facebook.com/shifeng.chen.980" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="https://github.com/ShiFengChen" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+			<a href="http://weibo.com/5651644984/profile?topnav=1&wvr=6&is_all=1" target="_blank"><i class="fa fa-weibo" aria-hidden="true"></i></a>
+		
+		</div>
+
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//banner-->
+
+<!--about-->
+<div class="about">
+	<div class="container">
+		<h3>About Something</h3>
+		<label class="line"></label>
+		<img src="../static/img/me.jpg" alt="shifengchen">
+		<blockquote>
+		  <p>只要是人，就有痛苦，只看你有没有勇气去克服它而已，如果你有这种勇气，它就会变成一种巨大的力量，否则你只有终生被它践踏奴役。</p>
+		  <small>《七种武器 - 离别钩》</small>
+		</blockquote>
+		<blockquote>
+		  <p>每个人都有属于自己的宿命，在年轻时或许会走偏，会绕上一大圈，但最后终究会走回自己应当步上的道路去。</p>
+		  <small>《JOJO的奇妙冒险》</small>
+		</blockquote>
+		<blockquote>
+		  <p>不要忘记，你的心到哪儿，你的宝藏就在哪儿。你必须找到你的宝藏，否则你在途中发现的一切便全部失去了意义。</p>
+		  <small>《牧羊少年奇幻之旅》</small>
+		</blockquote>
+		<blockquote>
+		  <p>我们的幸福在多大的程度上取决于我们自身，即取决于我们的个性。但在大多数情况下，我们却只是考虑运气、考虑拥有的财产，或者考虑我们在他人心目中的样子。</p>
+		  <small>《人生的智慧》</small>
+		</blockquote>
+		<blockquote>
+		  <p>我从来不相信什么懒洋洋的自由，我向往的自由是通过勤奋和努力实现的更广阔的人生，那样的自由才是珍贵的、有价值的；我相信一万小时定律，我从来不相信天上掉馅饼的灵感和坐等的成就。做一个自由又自律的人，靠势必实现的决心认真地活着。</p>
+		  <small>山本耀司</small>
+		</blockquote>
+	</div>
+</div>
+<!--//about-->
