@@ -112,15 +112,16 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    background-color: rgba(167,211,225,0.7);
-    background-image: linear-gradient(324deg, rgb(35, 41, 39) 4%, transparent 4%), linear-gradient(36deg, rgb(35, 41, 39) 4%, transparent 4%), linear-gradient(72deg, rgb(227, 215, 191) 8.5%, transparent 8.5%), linear-gradient(288deg, rgb(227, 215, 191) 8.5%, transparent 8.5%), linear-gradient(216deg, rgb(227, 215, 191) 7.5%, transparent 7.5%), linear-gradient(144deg, rgb(227, 215, 191) 7.5%, transparent 7.5%), linear-gradient(324deg, rgb(35, 41, 39) 4%, transparent 4%), linear-gradient(36deg, rgb(35, 41, 39) 4%, transparent 4%), linear-gradient(72deg, rgb(227, 215, 191) 8.5%, transparent 8.5%), linear-gradient(288deg, rgb(227, 215, 191) 8.5%, transparent 8.5%), linear-gradient(216deg, rgb(227, 215, 191) 7.5%, transparent 7.5%), linear-gradient(144deg, rgb(227, 215, 191) 7.5%, transparent 7.5%);
-    background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat;
-    background-attachment: scroll, scroll, scroll, scroll, scroll, scroll, scroll, scroll, scroll, scroll, scroll, scroll;
-    background-position: -70px 43px, 30px 43px, 30px 43px, -70px 43px, -70px 23px, 30px 23px, -20px 93px, 80px 93px, 80px 93px, -20px 93px, -20px 73px, 80px 73px;
-    background-clip: border-box, border-box, border-box, border-box, border-box, border-box, border-box, border-box, border-box, border-box, border-box, border-box;
-    background-origin: padding-box, padding-box, padding-box, padding-box, padding-box, padding-box, padding-box, padding-box, padding-box, padding-box, padding-box, padding-box;
-    background-color: rgb(35, 41, 39);
-    background-size: 100px 100px;
+    body {
+	background-image: linear-gradient(135deg, rgb(236, 237, 220) 25%, transparent 25%), linear-gradient(225deg, rgb(236, 237, 220) 25%, transparent 25%), linear-gradient(315deg, rgb(236, 237, 220) 25%, transparent 25%), linear-gradient(45deg, rgb(236, 237, 220) 25%, transparent 25%);
+	background-repeat: repeat, repeat, repeat, repeat;
+	background-attachment: scroll, scroll, scroll, scroll;
+	background-position: -50px 0px, -50px 0px, 0% 0%, 0% 0%;
+	background-clip: border-box, border-box, border-box, border-box;
+	background-origin: padding-box, padding-box, padding-box, padding-box;
+	background-size: 100px 100px;
+	background-color: lightblue;
+    }
 }
 
 .navbar {
@@ -128,7 +129,7 @@ body {
 }
 
 .jumbotron {
-    background-color: hsla(0,0%,80%,0.3);
+    background-color: rgba(10,10,10,0.2);
 }
 
 .jumbotron a {
@@ -139,14 +140,22 @@ body {
     max-width: 40%;
     height: auto;
     display: inline;
+    padding: .5em;
+    margin-bottom: 1em;
+    box-shadow: 0.3em 0.5em 0.35em rgba(0,0,0,0.5);
+    transition: 1s;
+}
+
+.jumbotron img:hover {
+    transform: rotate(20deg);
 }
 
 .bg-2 {
-    background-color: rgba(20,20,20,0.3); /* Dark Blue */
+    background-color: rgba(20,20,20,0.3);
     color: #fff;
 }
 .bg-3 {
-    background-color: rgba(30,30,30,0.4); /* White */
+    background-color: rgba(30,30,30,0.4);
     color: #fff;
 }
 
@@ -155,9 +164,18 @@ body {
     color: #fff;
 }
 
-.container-fluid {
+.my-container {
     padding-top: 4.375em;
     padding-bottom: 4.375em;
+}
+
+footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+footer a {
+    color: white;
 }
 
 
