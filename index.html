@@ -9,94 +9,94 @@
 
     <link rel="shortcut icon" href="sf.png" type="image/png">
     <!-- Place favicon.ico in the root directory -->
-    
-    <link rel="stylesheet" href="css/normalize.css">
+
+
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
-  <body>
+  <body onload="main()">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    
+
     <!-- Add your site or application content here -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed"
-		  data-toggle="collapse" data-target="#navbar"
-		  aria-expanded="false" aria-controls="navbar">
-	    <span class="sr-only">Toggle navigation</span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><strong>陳</strong></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-	  <ul class="nav navbar-nav">
-	    <li class="active"><a href="#">
-		<i class="fa fa-home"></i> 主页</a></li>
-	    <li class="dropdown">
-	      <a class="dropdown-toggle" data-toggle="dropdown"
-		 href="#"><i class="fa fa-book"></i> 博客
-		<span class="caret"></span></a>
-	      <ul class="dropdown-menu">
-		<li><a href="#">2016</a></li>
-		<li><a href="#">2017</a></li>
-	      </ul>
-	    </li>
-	    <li><a href="#"><i class="fa fa-camera"></i> 照片</a></li>
-	    <li><a href="Chinese/about.html">
-		<i class="fa fa-info-circle"></i> 关于</a></li>
-	  </ul>
-          <ul class="nav navbar-nav navbar-right">
-	    <li><a href="English/index.html"></i>
-<strong><i class="fa fa-hand-o-right"></i>
-  English</strong></a></li>
-</ul>
-</div><!--/.navbar-collapse -->
-</div>
-</nav>
+    <header role="banner">
+      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+      		          data-toggle="collapse" data-target="#navbar"
+      		          aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              CSF
+            </a>
+          </div><!-- /.navbar-header -->
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#">
+                  <i class="fa fa-home"></i> Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-book"></i> Copy
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-camera"></i> Photo
+                </a>
+              </li>
+        	    <li>
+                <a href="Chinese/about.html">
+                  <i class="fa fa-info-circle"></i> About
+                </a>
+              </li>
+            </ul>
+            <!-- <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="English/index.html">
+                </i><strong><i class="fa fa-hand-o-right"></i> English</strong>
+                </a>
+              </li>
+            </ul> -->
+          </div><!-- /#navbar -->
+        </div><!-- /.container -->
+      </nav>
+    </header>
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-  <div class="container text-center">
-    <h3>我!</h3>
-    <img class="img-rounded img-thumbnail img-responsive"
-	 src="img/sf.jpg" alt="myself">
-    <p>吾生于XXX年，痴长二十三，所学虽广，但皆为略懂皮毛，甚是惭愧。</p>
-    <p><a class="btn btn-primary btn-lg"
-	  href="Chinese/about.html" role="button">关于更多 &raquo;</a></p>
-  </div>
-</div>
+    <!-- main -->
+    <div id="main" style="margin: 0 auto; margin-top: 100px; width: 400px;">
+      <canvas id="webgl" width="400" height="400" style="border-radius: 220px;">
+        Please use a browser that supports "canvas"
+      </canvas>
+    </div
 
-<!-- Container -->
-<div class="container text-center bg-info my-container">
-  <h3>《人生的智慧》</h3>
-  <p>我们的幸福在多大的程度上取决于我们自身，即取决于我们的个性。但在大多数情况下，我们却只是考虑运气、考虑拥有的财产，或者考虑我们在他人心目中的样子。</p>
-</div>
-
-<div class="container text-center bg-success my-container">
-  <h3>山本耀司</h3>
-  <p>我从来不相信什么懒洋洋的自由，我向往的自由是通过勤奋和努力实现的更广阔的人生，那样的自由才是珍贵的、有价值的；我相信一万小时定律，我从来不相信天上掉馅饼的灵感和坐等的成就。做一个自由又自律的人，靠势必实现的决心认真地活着。</p>
-</div>
-
-<!-- footer -->
-<footer class="container-fluid text-center bg-4">
-  <a href="#">陈诗锋的博客</a>
-</footer>
+    <!-- footer -->
+    <!-- <footer class="container-fluid text-center bg-4">
+      <a href="#">陈诗锋的博客</a>
+    </footer> -->
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="lib/webgl-utils.js"></script>
+  <script src="lib/webgl-debug.js"></script>
+  <script src="lib/cuon-utils.js"></script>
+  <script src="lib/cuon-matrix.js"></script>
+  <script src="js/OBJViewer.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
