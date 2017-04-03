@@ -8,9 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/ico">
 
-        <link rel="stylesheet" href="css/normalize.css">
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -19,8 +19,31 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div id="header-container">
+          <header class="wrapper clearfix">
+            <div id="title-container">
+              <h1 id="title">Initializr</h1>
+              <h2>Start an HTML5 project in 15 seconds!</h2>
+            </div>
+            <div id="html5-logo-container">
+              <img src="img/html5-logo-165-cut.png" alt="HTML5 Logo">
+            </div>
+            <div id="follow-container">
+              <p><a id="author" href="https://twitter.com/verekia"
+                target="_blank">Jonathan Verrecchia</a></p>
+              <div id="follow-iframes-container">
+                <a href="https://twitter.com/verekia" class="twitter-follow-button"
+                data-align="right" data-width="260px" data-show-count="true"
+                data-size="large">Follow @verekia</a>
+                <a href="https://twitter.com/initializr" class="twitter-follow-button"
+                data-align="right" data-width="260px" data-show-count="true"
+                data-size="large">Follow @initializr</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div>
+            </div>
+          </header>
+        </div>
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

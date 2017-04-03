@@ -1,2 +1,132 @@
 @import "normalize.less";
-@import "page.less";
+@import "variables-mixins.less";
+
+
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+// Header
+#header-container {
+  background: @theme-color;
+  border-bottom: 13px solid @theme-color-darker;
+
+  .wrapper {
+    .clearfix;
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+
+    #title-container {
+      h1 {
+        color: white;
+        font-family: 'ChunkFiveRegular';
+        font-weight: normal;
+        font-size: 4em;
+        margin-bottom: 20px;
+      }
+      h2 {
+        color: white;
+        font-size: 16px;
+      }
+    }
+    #html5-logo-container,
+    #follow-container {
+      display: none;
+    }
+  }
+}
+
+/* ==|== media queries ====================================================== */
+
+@media  only screen and (min-width: 540px) {
+  // Header
+  #header-container {
+    box-shadow: 0 5px 8px rgba(0,0,0,0.15);
+    .wrapper {
+      text-align: left;
+      height: 133px;
+      #title,
+      #title-container h2,
+      #follow-container p {
+        text-shadow: 0 -2px 2px rgba(0,0,0,0.1);
+      }
+      #title-container {
+        float: left;
+        width: 63%;
+      }
+      #follow-container {
+        float: right;
+        width: 37%;
+        display: block;
+        a {
+          color: white;
+        }
+        p {
+          text-align: right;
+          // color: white;
+          font-weight: bold;
+          margin: 12px 0;
+        }
+        #follow-iframes-container {
+          width: 260px;
+          float: right;
+        }
+      } // #follow-container
+    } // .wrapper
+  } // #header-container
+}
+
+
+@media  only screen and (min-width: 860px) {
+  // Header
+  #header-container {
+    .wrapper {
+      #title-container {
+        float: left;
+        width: 40%;
+      }
+      #html5-logo-container {
+        display: block;
+        float: left;
+        width: 20%;
+        img {
+          display: block;
+          margin: auto;
+        }
+      }
+      #follow-container {
+        float: right;
+        width: 40%;
+      }
+    }
+  } // #header-container
+}
+
+// #header-container {
+//   box-shadow: 0 5px 8px rgba(0,0,0,0.15);
+//   background: @feature-color;
+//   border-bottom: 13px solid @feature-color-darker;
+//
+//   .wrapper {
+//     .clearfix;
+//     text-align: left;
+//     height: 133px;
+//     width: 1026px;
+//     margin: 0 auto;
+//
+//     #title-container {
+//       float: left;
+//       width: 40%;
+//     }
+//     #html5-logo-container {
+//       display: block;
+//       float: left;
+//       width: 20%;
+//     }
+//     #follow-container {
+//       float: right;
+//       width: 40%;
+//     }
+//   }
+// }
