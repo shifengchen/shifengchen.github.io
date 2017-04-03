@@ -2,11 +2,18 @@
 // Variables
 //---------------------------------
 
-// Colors
+//== Colors
+//
+//##
+
 @theme-color:           #f16529;
 @theme-color-darker:    #e44d26;
 
-// Fonts
+
+//== Fonts
+//
+//##
+
 @font-face {
     font-family: 'ChunkFiveRegular';
     src: url('fonts/Chunkfive-webfont.eot');
@@ -29,6 +36,7 @@
     font-style: normal;
 }
 
+
 //
 // Mixins
 //---------------------------------
@@ -42,5 +50,47 @@
   }
   &:after {
     clear: both;
+  }
+}
+
+.blank-background() {
+  button,
+  a {
+    color: white;
+    background: #bbb;
+    &:hover {
+      background: #c4c4c4;
+    }
+  }
+  button:active {
+    background: #888;
+  }
+}
+
+.initializr-background() {
+  button,
+  a {
+    color: white;
+    background: #f16529;
+    &:hover {
+      background: #f67539;
+    }
+  }
+  button:active {
+    background: #d14509;
+  }
+}
+
+.bootstrap-background() {
+  button,
+  a {
+    color: white;
+    background: #6090ff;
+    &:hover {
+      background: #78a0ff
+    }
+  }
+  button:active {
+    background: #4070df;
   }
 }
