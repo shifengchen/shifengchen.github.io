@@ -43,7 +43,7 @@ function main() {
   }
 
   // Set the clear color and enable the depth test
-  gl.clearColor(0.2, 0.2, 0.2, 1.0);
+  gl.clearColor(0, 0, 0, 0);
   gl.enable(gl.DEPTH_TEST);
 
   // Get the storage locations of attribute and uniform variables
