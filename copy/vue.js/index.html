@@ -1,16 +1,23 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vue.js</title>
+        <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="vue.js">
+        <meta property="og:description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
+        <meta property="og:image" content="https://cn.vuejs.org/images/logo.png">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="vue.js">
+        <meta name="twitter:description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
+        <meta name="twitter:image" content="https://cn.vuejs.org/images/logo.png">
 
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="icon" href="img/logo.png" type="image/x-icon">
+
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -19,22 +26,89 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div id="mobile-bar" class="top"></div>
+        <header id="header">
+          <a id="logo" href="/">
+            <img src="img/logo.png">
+            <span>Vue.js</span>
+          </a>
+          <ul id="nav">
+            <li>
+              <form id="search-form">
+                <span style="position: relative; display: inline-block; direction: ltr;" class="algolia-autocomplete">
+                  <input dir="auto" style="position: relative; vertical-align: top;" aria-owns="algolia-autocomplete-listbox-0" aria-expanded="false" aria-autocomplete="list" role="combobox" spellcheck="false" autocomplete="off" id="search-query-nav" class="search-query st-default-search-input aa-input" type="text">
+                  <pre style="position: absolute; visibility: hidden; white-space: pre; font-family: Cantarell; font-size: 14.6667px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;" aria-hidden="true"></pre>
+                  <span id="algolia-autocomplete-listbox-0" role="listbox" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;" class="aa-dropdown-menu">
+                    <div class="aa-dataset-1"></div>
+                  </span>
+                </span>
+              </form>
+            </li>
+            <li><a class="nav-link" href="https://cn.vuejs.org/v2/guide/">教程</a></li>
+            <li><a class="nav-link" href="https://cn.vuejs.org/v2/api/">API</a></li>
+            <li><a class="nav-link" href="https://cn.vuejs.org/v2/examples/">示例</a></li>
+            <li><a class="nav-link" href="https://cn.vuejs.org/about/">参与贡献</a></li>
+            <li class="nav-dropdown-container">
+              <a class="nav-link">社区</a>
+              <span class="arrow"></span>
+              <ul class="nav-dropdown">
+                <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+                <li><a href="http://forum.vuejs.org/" class="nav-link" target="_blank">论坛</a></li>
+                <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">聊天室</a></li>
+                <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+                <li><a href="https://vuejsjob.com/?ref=vuejs" class="nav-link" target="_blank">工作</a></li>
+              </ul>
+            </li>
+            <li class="nav-dropdown-container ecosystem">
+              <a class="nav-link">生态系统</a>
+              <span class="arrow"></span>
+              <ul class="nav-dropdown">
+                <li><h4>帮助</h4></li>
+                <li><ul>
+                  <li><a href="http://forum.vuejs.org/" class="nav-link" target="_blank">论坛</a></li>
+                  <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">聊天室</a></li>
+                  <li><a href="https://github.com/vuejs-templates" class="nav-link" target="_blank">模板</a></li>
+                </ul></li>
+                <li><h4>信息</h4></li>
+                <li><ul>
+                  <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+                  <li><a href="https://medium.com/the-vue-point" class="nav-link" target="_blank">博客</a></li>
+                  <li><a href="https://vuejobs.com/?ref=vuejs" class="nav-link" target="_blank">工作</a></li>
+                </ul></li>
+                <li><h4>核心插件</h4></li>
+                <li><ul>
+                  <li><a href="https://router.vuejs.org/" class="nav-link" target="_blank">Vue Router</a></li>
+                  <li><a href="https://vuex.vuejs.org/" class="nav-link" target="_blank">Vuex</a></li>
+                </ul></li>
+                <li><h4>资源列表</h4></li>
+                <li><ul>
+                  <li><a href="https://github.com/vuejs" class="nav-link" target="_blank">官方仓库</a></li>
+                  <li><a href="https://github.com/vuejs/awesome-vue" class="nav-link" target="_blank">Vue 资源</a></li>
+                </ul></li>
+              </ul>
+            </li>
+            <li class="nav-dropdown-container language">
+              <a class="nav-link">多语言</a>
+              <span class="arrow"></span>
+              <ul class="nav-dropdown">
+                <li><a href="https://cn.vuejs.org/" class="nav-link" target="_blank">中文</a></li>
+                <li><a href="https://vuejs.org/" class="nav-link" target="_blank">English</a></li>
+                <li><a href="https://jp.vuejs.org/" class="nav-link" target="_blank">日本語</a></li>
+                <li><a href="https://ru.vuejs.org/" class="nav-link" target="_blank">Русский</a></li>
+                <li><a href="https://kr.vuejs.org/" class="nav-link" target="_blank">한국어</a></li>
+              </ul>
+            </li>
+          </ul>
+        </header>
+        <aside class="sidebar"></aside>
+        <div id="hero"></div>
+        <div id="highlights"></div>
+        <div id="sponsors"></div>
+        <footer id="footer"></footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>
