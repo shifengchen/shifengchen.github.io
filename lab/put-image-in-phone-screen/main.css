@@ -1,0 +1,42 @@
+.main {
+    width: 300px;
+    margin: 10px auto;
+}
+
+.phone {
+    position: relative;
+    max-width: 300px;
+    display: inline-block;
+}
+
+.device {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.screen {
+    position: absolute;
+    background-color: #aaa;
+    background: url('skyscraper.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 88%;
+    height: 77%;
+    top: 11.8%;
+    left: 6%;
+    border-radius: 2px;
+    border: 1px solid #444;
+}
+
+.screen:before {
+    content: '';
+    background-color: #fff;
+    opacity: 0.2;
+    position: absolute;
+    width: 70%;
+    height: 140%;
+    top: -12%;
+    right: -59.6%;
+    transform: rotate(-19deg);
+}
