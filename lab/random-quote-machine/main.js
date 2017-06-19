@@ -7,7 +7,6 @@ function getMessage() {
   });
 
   message.done(function(json) {
-    json = JSON.stringify(json);
     var content = json[0].content.slice(3,-5);
     var title = json[0].title;
     $(".quote-main").animate({
