@@ -1,0 +1,78 @@
+/** 
+ *  Beautiful Color #1
+ */
+
+body {
+  width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+ 
+.a1 { background: #c67c8d; }
+.a2 { background: #190f18; }
+.a3 { background: #fceed3; }
+.a4 { background: #a47a6a; }
+.a5 { background: #501651; }
+
+
+.b1 { background: #243d5c; }
+.b2 { background: #132531; }
+.b3 { background: #8aa3c3; }
+.b4 { background: #160f20; }
+.b5 { background: #122245; }
+
+.c1 { background: #002b5d; }
+.c2 { background: #0a6faf; }
+.c3 { background: #ffac70; }
+.c4 { background: #ff9982; }
+.c5 { background: #ebc7a3; }
+
+.d1 { background: #597aa3; }
+.d2 { background: #223a54; }
+.d3 { background: #5ab3ff; }
+.d4 { background: #aea0e6; }
+.d5 { background: #f8d9a2; }
+
+.e1 { background: #bcdd83; }
+.e2 { background: #72879c; }
+.e3 { background: #6eaed8; }
+.e4 { background: #e67471; }
+.e5 { background: #f3e8cc; }
+
+.f1 { background: #b68466; }
+.f2 { background: #a68985; }
+.f3 { background: #c58a50; }
+.f4 { background: #c37b3c; }
+.f5 { background: #60433d; }
+
+.g1 { background: #50404a; }
+.g2 { background: #f9dfc6; }
+.g3 { background: #6a97a2; }
+.g4 { background: #e7ece8; }
+.g5 { background: #393e41; }
+
+.h1 { background: #716393; }
+.h2 { background: #f2b592; }
+.h3 { background: #ffffc0; }
+.h4 { background: #aa468c; }
+.h5 { background: #543f50; }
+
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+span {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+}
