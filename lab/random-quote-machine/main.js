@@ -7,7 +7,7 @@ function getMessage() {
   });
 
   message.done(function(json) {
-    var content = json[0].content.slice(3,-5);
+    var content = json[0].content;
     var title = json[0].title;
     $(".quote-main").animate({
       opacity: 0
@@ -16,7 +16,7 @@ function getMessage() {
       $(this).animate({
         opacity: 1
       }, 500);
-      $('#content').text(content);
+      $('#content').html(content);
       $('#title').text('- ' + title);
     });
     var color = Math.floor(Math.random() * colors.length);
