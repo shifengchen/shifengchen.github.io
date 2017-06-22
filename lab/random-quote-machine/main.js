@@ -1,4 +1,4 @@
-var colors = ['#c67c8d', '#ffac70', '#0a6faf', '#bcdd83', '#c37b3c', '#aa468c', '#47dbf5', '#fff2d2', '#cce58a', '#54844d', '#5cb8b3', '#85929e']
+var colors = ['#b03665', '#41786e', '#5cb8b3', '#1e3560', '#8867ca', '#3fa3e7', '#97c579', '#e67471', '#6aaa5e', '#f5d957', '#2c4d72', '#5e3138', '#501651', '#0e1122', '#c37b3c', '#e67471']
 
 function getMessage() {
   var message = $.ajax({
