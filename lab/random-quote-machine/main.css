@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  padding-top: 10%;
+  padding-top: 12%;
   font-family: 'Indie Flower', cursive;
   font-size: 18px;
   color: #333;
@@ -19,11 +19,11 @@ body {
 }
 
 .like {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-decoration: none;
-    color: #fff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .quote-box {
@@ -73,4 +73,10 @@ button {
 
 button:hover {  
   opacity: .9;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding-top: 70px;
+  }
 }
